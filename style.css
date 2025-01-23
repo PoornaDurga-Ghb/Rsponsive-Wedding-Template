@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Raleway", serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* navigation bar */
 .nav-bar{
     background-color: whitesmoke;
@@ -27,6 +30,7 @@
 }
 .nav-bar:hover{
     background-color: white;
+    opacity: 1;
 }
 .nav-bar a:hover{
     background-color: #ccc;
@@ -107,7 +111,7 @@ section{
     border-radius: 5px;
     padding: 10px;
     margin: 80px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
     overflow: hidden;
 }
@@ -115,6 +119,7 @@ section{
     background-color: #b8b4b4;
     cursor: pointer;
     color: #000;
+    transition: 0.2s ease;
 }
 .third-image-container{
     position: relative;
@@ -171,16 +176,18 @@ section{
     line-height: 2;
 }
 .sub-con span{
-    font-size: 25px;
+    font-size: 30px;
 }
 .sub-con p{
-    font-size: 15px;
+    font-size: 20px;
 }
 .last-con{
     text-align: center;
     line-height: 2;
     letter-spacing: 2px;
     margin-top: 100px;
+    background-color: rgb(242, 197, 237);
+    padding: 40px;
 }
 .last-con span:first-child{
     font-size: 35px;
@@ -196,7 +203,6 @@ section{
     background-color: lightcoral;
     color: white;
     width: fit-content;
-    padding: 15px;
     font-size: 25px;
     margin: 30px;
     padding-left: 60px;
@@ -204,8 +210,10 @@ section{
     border-radius: 8px;
 }
 .rsvp-con span:hover{
-    background-color: #ccc;
+    background-color: gray;
     color: #000;
+    transition: 0.2s ease;
+    cursor: pointer;
 }
 .powered-con{
     background-color: black;
@@ -216,7 +224,6 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
 }
 .powered-con a,.powered-con p{
     color: white;
